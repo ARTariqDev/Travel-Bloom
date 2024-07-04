@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Bloom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <h2 id="logo">Travel Bloom</h2>
+        <a href="travel_recommendations.html">Home</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="ContactUs.html">Contact Us</a>
+        <div class="search-container">
+            <input type="text" placeholder="Enter a destination or keyword" id="searchInput">
+            <button onclick="searchFunction()">Search</button>
+            <button onclick="resetFunction()">Clear</button>
+        </div>
+    </div>
+    <main>
+        <div class="banner" height="50%">
+            <img src="bg.jpg" id="bg" />
+            <div class="banner-text-container">
+                <h1 id="banner-text">ABOUT US</h1>
+                <p id="about-text">Welcome to our company! We are a team of passionate individuals dedicated to providing excellent services/products to our customers. Our mission is to provide the best experience for people traveling to different destinations around the world. Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in putting our customers first and working together to achieve our goals. Feel free to explore our website to learn more about what we offer!</p>
+                <p>Find out about our Team below! ↓</p>
+            </div>
+        </div>
+        <section class="team-section">
+            <h2>Our Team</h2>
+            <div class="team-member">
+                <img src="team1.jpeg" alt="John Doe" >
+                <h3>John Doe</h3>
+                <p>John is responsible for...</p>
+                <button class="team-role">CEO</button>
+            </div>
+            <div class="team-member">
+                <img src="team2.jpeg" alt="Celina Thomas">
+                <h3>Celina Thomas</h3>
+                <p>Celina is responsible for...</p>
+                <button class="team-role">Team Lead</button>
+            </div>
+            <div class="team-member">
+                <img src="team3.jpeg" alt="Mike Tysen">
+                <h3>Mike Tysen</h3>
+                <p>Mike is responsible for...</p>
+                <button class="team-role">Delivery Head</button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function searchFunction() {
+            const searchInput = document.getElementById('searchInput').value;
+            alert('Search for: ' + searchInput);
+        }
+
+        function resetFunction() {
+            document.getElementById('searchInput').value = '';
+            alert('Search reset.');
+        }
+    </script>
+</body>
+</html>
